@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulário de Inscrição</title>
+  </head>
+  <body>
+    <header>
+      <h1>Inscrição na Academia</h1>
+    </header>
+    <main class="main">
+      <form action="" class="sect1">
+        <div class="container">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Insira seu nome"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="sobrenome">Sobrenome</label>
+            <input
+              type="text"
+              name="sobrenome"
+              id="sobrenome"
+              placeholder="Insira seu sobrenome"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="data">Data de nascimento</label>
+            <input type="date" name="data" id="data" required />
+          </div>
+          <div class="form-group">
+            <label for="genero">Gênero</label>
+            <select name="genero" id="genero" required>
+              <option value="">Selecione uma opção</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+              <option value="prefiro-nao-informar">Prefiro não informar</option>
+            </select>
+          </div>
+        </div>
+        <div class="container">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Insira seu email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder="(00) 00000-0000"
+            />
+          </div>
+        </div>
+        <div class="container">
+          <div class="form-group">
+            <label for="endereco">Endereço</label>
+            <textarea
+              name="endereco"
+              id="endereco"
+              rows="3"
+              placeholder="Rua, número, complemento, bairro, cidade e CEP"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <div class="container">
+          <div class="form-group">
+            <label>Plano de Treinamento</label>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="plano" value="basico" required />
+                Básico</label
+              >
+              <label
+                ><input type="radio" name="plano" value="intermediario" />
+                Intermediário</label
+              >
+              <label
+                ><input type="radio" name="plano" value="avancado" />
+                Avançado</label
+              >
+            </div>
+          </div>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
